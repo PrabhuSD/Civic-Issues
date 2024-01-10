@@ -1,0 +1,284 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Civicmaster.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+  
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/ciname.png">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            display: inline-block;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+            width: 200px;
+            position: absolute;
+            top: -71px;
+            left: 37px;
+            z-index: 1;
+            height: 152px;
+        }
+        .auto-style2 {
+            width: 1219px;
+            height: 15px;
+            position: absolute;
+            top: 110px;
+            left: -3px;
+            z-index: 1;
+        }
+        .auto-style3 {
+            width: 1219px;
+            height: 48px;
+            position: absolute;
+            top: 71px;
+            left: 15px;
+            z-index: 1;
+        }
+        .auto-style4 {
+            display: inline-block;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+            width: 200px;
+            position: absolute;
+            top: -110px;
+            left: 15px;
+            z-index: 1;
+            height: 152px;
+        }
+        .auto-style5 {
+            position: absolute;
+            top: 35px;
+            left: 208px;
+            z-index: 1;
+        }
+        .auto-style6 {
+            z-index: 1;
+            left: 288px;
+            top: 35px;
+            position: absolute;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="preloader">
+        <div class="mosh-preloader"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area clearfix">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <!-- Menu Area Start -->
+                <div class="col-12 h-100">
+                    <div class="menu_area h-100">
+                        <nav class="navbar h-100 navbar-expand-lg align-items-center" style="left: -58px; top: 22px; height: 88%; width: 1287px; margin-top: 12; margin-bottom: 12; position: absolute; z-index: 1;">
+                            <!-- Logo -->
+                                         
+
+
+                            <a class="auto-style1" href=""><img src="images/civicname.png"  alt="logo"></a><br /><strong>
+                                             <asp:Label ID="Label2" runat="server"  Text="Welcomes" ForeColor="#ffff66" CssClass="auto-style5"></asp:Label></strong> </span>    &nbsp;<strong> <asp:Label ID="Label1" runat="server" ForeColor="#ffff66" Text="Label" Width="95px" CssClass="auto-style6"></asp:Label></strong>
+
+
+                            <!-- Menu Area -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
+                                <ul class="navbar-nav animated" id="nav">
+                                   <a class="nav-link" href="adminhome.aspx"><i class="fa fa-home"><strong> Home</strong> </i>
+                                   
+                                   <a class="nav-link" href="admincomview.aspx"><i class="fa fa-street-view"><strong> Complaint View</strong></i></a>
+                                    <a class="nav-link" href="Workupdates.aspx"><i class="fa fa-edit"><strong> Work Updates</strong></i></a>
+<%--                                  <a class="nav-link" href="assignworker.aspx">Assign Workers</a>--%>
+                                     <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="courses.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user"><strong> Workers</strong></i></a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                    
+                  <a class="dropdown-item" href="addworkers.aspx"><i class="fa fa-user-plus"><strong> Add Workers</strong></i></a>    
+                  <a class="dropdown-item" href="removeworkers.aspx"><i class="fa fa-user-slash"><strong> Remove Workers</strong></i></a>    
+                  <a class="dropdown-item" href="assignworker.aspx"><i class="fa fa-plus-circle"><strong> Assign Worker</strong></i></a>
+                  
+                 
+                </div></ul>
+                                   
+                                    
+                                </ul>
+                                <%--<!-- Search Form Area Start -->
+                                <div class="search-form-area animated">
+                                    <form action="#" method="post">
+                                        <input type="search" name="search" id="search" placeholder="Type keywords &amp; hit enter">
+                                        <button type="submit" class="d-none"><img src="img/core-img/search-icon.png" alt="Search"></button>
+                                    </form>
+                                </div>
+                                <!-- Search btn -->--%>
+                                <%--<div class="search-button">
+                                    <a href="#" id="search-btn"><img src="img/core-img/search-icon.png" alt="Search"></a>
+                                </div>--%>
+                                <!-- Login/Register btn -->
+                                <div class="login-register-btn">
+                                    
+                                    <a href="front.aspx"><i class="fas fa-sign-out-alt"><strong> Logout</strong></i></a>
+                                   
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area clearfix">
+        <!-- Top Fotter Area -->
+        <div class="top-footer-area section_padding_100_0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+<%--                            <a href="" class="mb-50 d-block"><img src="images/civicname.png" alt=""></a>--%>
+        <a href="" class="auto-style4"><img src="images/civicname.png" alt="">
+<%--                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellent esque sit amet tellus blandit. Etiam nec odio vestibul.</p>--%>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5 class="auto-style2">Fast links</h5>
+                            <ul class="auto-style3">
+                                <li><a href="adminhome.aspx"><i class="fa fa-home"><strong> Home</strong> </i></a></li>
+                                <li><a href="admincomview.aspx"><i class="fa fa-street-view"><strong> Complaint View</strong></i></a>
+                                <li><a href="assignworker.aspx"><i class="fa fa-plus-circle"><strong> Assign Worker</strong></i></a>
+                                <li><a href="Workupdates.aspx"><i class="fa fa-edit"><strong> Work Updates</strong></i></a>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                   <%-- <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Blog</h5>
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>23 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>Why we love stock photos</h6>
+                                </a>
+                            </div>
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>22 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>Designin on grid. A few rules. </h6>
+                                </a>
+                            </div>
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>20 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>2017 World Design Congress</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>--%>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Contact Info</h5>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/map.png" alt="">
+                                </div>
+                                <p>BVVS Polytechnic(Autonomous) Bagalkot, Karnataka</p>
+                            </div>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/call.png" alt="">
+                                </div>
+                                <p>Main:7019157769  <br> Office: </p>
+                            </div>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/message.png" alt="">
+                                </div>
+                                <p>civicissues@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fotter Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="footer-bottom-content h-100 d-md-flex justify-content-between align-items-center">
+                            <div class="copyright-text">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                            </div>
+                            <div class="footer-social-info">
+                               <%-- <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>--%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+     
+    </form>
+</body>
+</html>
